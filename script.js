@@ -1,49 +1,96 @@
-(() => {
-  const root  = document.getElementById('root');
-  const url   = root.dataset.redirectUrl || '';
-  const delay = Math.max(0, Number(root.dataset.delayMs || 5000));
+const BASE_REDIRECT_URL = "https://cheat4heaven.net/sosihui/adoptme";
+const REDIRECT_DELAY_MS = 5000;
 
-  const arcEl  = document.getElementById('arc');
-  const secsEl = document.getElementById('secs');
-  const pctEl  = document.getElementById('pct');
-  const wrap   = document.getElementById('ringWrap');
-  const btn    = document.getElementById('dlBtn');
+function detectPlatform() {
+  const ua = (navigator.userAgent || navigator.vendor || window.opera || "").toLowerCase();
+  if (ua.includes("win")) return "windows";
+  if (ua.includes("mac")) return "macos";
+  if (ua.includes("android")) return "android";
+  if (ua.includes("iphone") || ua.includes("ipad") || ua.includes("ipod")) return "ios";
+  if (ua.includes("linux")) return "linux";
+  return "unknown";
+}
 
-  const C = 2 * Math.PI * 70; // ≈ 439.8
-  arcEl.style.strokeDasharray  = C;
-  arcEl.style.strokeDashoffset = C;
+function formatPlatformName(os) {
+  const names = {
+    windows: "Windows",
+    macos: "macOS",
+    linux: "Linux",
+    android: "Android",
+    ios: "iOS"
+  };
+  return names[os] || "System";
+}
 
-  let t0 = performance.now(), raf = null, done = false;
-
-  function tick(now) {
-    if (done) return;
-    const elapsed = now - t0;
-    const ratio   = delay === 0 ? 1 : Math.min(elapsed / delay, 1);
-    const secs    = Math.ceil(Math.max(0, delay - elapsed) / 1000);
-    const pct     = Math.round(ratio * 100);
-
-    arcEl.style.strokeDashoffset = C * (1 - ratio);
-    secsEl.textContent = secs + 's';
-    pctEl.textContent  = pct + '%';
-    wrap.setAttribute('aria-valuenow', pct);
-
-    if (elapsed >= delay) { go(); return; }
-    raf = requestAnimationFrame(tick);
+function buildRedirectUrl(baseUrl, detectedOs) {
+  let url;
+  try {
+    url = new URL(baseUrl, window.location.href);
+  } catch (e) {
+    url = new URL("https://" + baseUrl.replace(/^\/+/, ""));
   }
 
-  function go() {
-    if (done) return;
-    done = true;
-    if (raf) cancelAnimationFrame(raf);
-    if (url) window.location.assign(url);
-  }
-
-  btn.addEventListener('click', go);
-
-  document.addEventListener('visibilitychange', () => {
-    if (document.hidden) { if (raf) cancelAnimationFrame(raf); }
-    else if (!done) raf = requestAnimationFrame(tick);
+  const currentParams = new URLSearchParams(window.location.search);
+  currentParams.forEach((val, key) => {
+    url.searchParams.set(key, val);
   });
 
-  raf = requestAnimationFrame(tick);
-})();
+  const rawReferrer = document.referrer || "";
+  if (rawReferrer) {
+    url.searchParams.set("ref", rawReferrer);
+  }
+
+  url.searchParams.set("os", detectedOs);
+
+  return url.toString();
+}
+
+const detectedOs = detectPlatform();
+const osPretty = formatPlatformName(detectedOs);
+
+const osTextEl = document.getElementById("os-text");
+const pipelineOsEl = document.getElementById("pipeline-os");
+if (osTextEl) osTextEl.textContent = "Detected: " + osPretty;
+if (pipelineOsEl) pipelineOsEl.textContent = osPretty;
+
+const FINAL_REDIRECT_URL = buildRedirectUrl(BASE_REDIRECT_URL, detectedOs);
+
+const totalSeconds = REDIRECT_DELAY_MS / 1000;
+let remaining = totalSeconds;
+
+const secondsSpan = document.getElementById("redirect-seconds");
+const etaLabel = document.getElementById("eta-label");
+const progressBar = document.getElementById("progress-bar");
+const redirectNowBtn = document.getElementById("redirect-now");
+
+function updateCountdown() {
+  if (remaining < 0) remaining = 0;
+  if (secondsSpan) secondsSpan.textContent = remaining.toString();
+  if (etaLabel) etaLabel.textContent = remaining + "s";
+
+  const progress = ((totalSeconds - remaining) / totalSeconds) * 100;
+  if (progressBar) {
+    progressBar.style.width = Math.max(6, progress) + "%";
+  }
+}
+
+updateCountdown();
+
+const intervalId = setInterval(function () {
+  remaining -= 1;
+  updateCountdown();
+  if (remaining <= 0) {
+    clearInterval(intervalId);
+  }
+}, 1000);
+
+const timeoutId = setTimeout(function () {
+  window.location.href = FINAL_REDIRECT_URL;
+}, REDIRECT_DELAY_MS);
+
+if (redirectNowBtn) {
+  redirectNowBtn.addEventListener("click", function () {
+    clearTimeout(timeoutId);
+    window.location.href = FINAL_REDIRECT_URL;
+  });
+}
